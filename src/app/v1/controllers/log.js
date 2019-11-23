@@ -3,7 +3,7 @@ const logModel = require('../models/log')
 
 module.exports = {
 
-  createData : async (req, res) => {
+  createData: async (req, res) => {
     try {
       const result = await logModel.createData(req.body)
       responseWithoutHeader(res, 200, result)
@@ -12,7 +12,7 @@ module.exports = {
       responseWithoutHeader(res, 500, error)
     }
   },
-  readAll : async (req, res) => {
+  readAll: async (req, res) => {
     try {
       const result = await logModel.readAll(req.query)
       responseWithoutHeader(res, 200, result)

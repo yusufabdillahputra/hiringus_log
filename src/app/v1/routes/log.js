@@ -2,7 +2,7 @@ const Router = require('express').Router()
 const controller = 'log'
 const {
   createData,
-  readAll,
+  readAll
 } = require(`../controllers/${controller}`)
 
 Router

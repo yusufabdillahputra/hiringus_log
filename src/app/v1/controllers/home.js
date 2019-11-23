@@ -1,10 +1,10 @@
-const {responseWithoutHeader} = require('../../../helper/response')
+const { responseWithoutHeader } = require('../../../helper/response')
 
 module.exports = {
 
   landing: async (req, res) => {
     try {
-      responseWithoutHeader(res, 200, `stable`)
+      responseWithoutHeader(res, 200, 'stable')
     } catch (error) {
       responseWithoutHeader(res, 500, error)
     }
